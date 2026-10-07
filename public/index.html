@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Future Thai Husband</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="side">
+    <h1 class="logo">Future Thai<br>Husband</h1>
+    <p class="tag">Your AI companion, always here for you. ♡</p>
+    <nav>
+      <button class="nav on" data-view="chat">Chat</button>
+      <button class="nav" data-view="memories">Memories</button>
+      <button class="nav" data-view="settings">Settings</button>
+    </nav>
+    <p class="scrawl">Maybe in another life, but in this one… I'm still yours. ♡</p>
+    <div class="me"><span class="dot"></span><div><b id="meName">You</b><small>Online</small></div></div>
+  </aside>
+
+  <main class="panel">
+    <header class="head">
+      <div class="av">T</div>
+      <div><b>Thanawat <span class="dot"></span></b><small>Your Future Thai Husband ♡</small></div>
+    </header>
+
+    <section id="chat" class="view on">
+      <div id="log" class="log" aria-live="polite"></div>
+      <div id="typing" class="typing" hidden><span>Thanawat is typing</span><i></i><i></i><i></i></div>
+      <div class="composer">
+        <input id="input" type="text" placeholder="Type a message…" autocomplete="off" maxlength="1500" aria-label="Message">
+        <button id="send" aria-label="Send">➤</button>
+      </div>
+    </section>
+
+    <section id="memories" class="view">
+      <h2>Things he remembers</h2>
+      <ul id="memList" class="memlist"></ul>
+      <button id="clearMem" class="ghost">Clear memories</button>
+    </section>
+
+    <section id="settings" class="view">
+      <h2>Settings</h2>
+      <label>Your name <input id="setName" type="text" maxlength="30"></label>
+      <button id="saveName" class="ghost">Save name</button>
+      <button id="clearChat" class="ghost">Clear conversation</button>
+    </section>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
